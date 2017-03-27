@@ -12,6 +12,9 @@ int LED3 = 9;
 int LED4 = 6;
 int LED5 = 5;
 
+int LED;
+int randomled;
+
 Servo myservo;
 
 void setup(){
@@ -37,17 +40,19 @@ void loop(){
  LEDdim = map(fsrReading, 0, 1023, 0, 255);
  analogWrite(LED1, LEDdim);
 
- LEDdim = map(fsrReading, 0, 1023, 0, 255);
- analogWrite(LED2, LEDdim);
+//LEDdim = map(fsrReading, 0, 1023, 0, 255);
+ //analogWrite(LED2, LEDdim);
 
-  LEDdim = map(fsrReading, 0, 1023, 0, 255);
- analogWrite(LED3, LEDdim);
+//  LEDdim = map(fsrReading, 0, 1023, 0, 255);
+// analogWrite(LED3, LEDdim);
+//
+//  LEDdim = map(fsrReading, 0, 1023, 0, 255);
+// analogWrite(LED4, LEDdim);
+//
+ // LEDdim = map(fsrReading, 0, 1023, 0, 255);
+ //analogWrite(LED5, LEDdim);
 
-  LEDdim = map(fsrReading, 0, 1023, 0, 255);
- analogWrite(LED4, LEDdim);
 
-  LEDdim = map(fsrReading, 0, 1023, 0, 255);
- analogWrite(LED5, LEDdim);
 
 
 
@@ -57,5 +62,7 @@ void loop(){
   val= map(val, 0, 1024, 0 , 180); // map in 0 t0 180
   myservo.write(val);
   Serial.println(val);
+
+
  
 }
