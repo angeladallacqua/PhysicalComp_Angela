@@ -1,3 +1,4 @@
+//This is a modified version of last semester's homework assignment in Coding for Artists.
 
 import processing.serial.*;
 
