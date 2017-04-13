@@ -1,4 +1,6 @@
- #include <Servo.h>
+//This is a modified version of Adafruit's basic beginners tutorials on a FSR, Servo Motor, and Potentiometer 
+
+#include <Servo.h>
 
 int val;
 
