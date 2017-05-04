@@ -1,3 +1,7 @@
+//Modification of Adafruit VS1053
+//Modification of SparkFun Example Code for Stepper Motor 
+//Modification of Adafruit IR Sensor example code
+
 #include <SPI.h>
 #include <Adafruit_VS1053.h>
 #include <SD.h>
