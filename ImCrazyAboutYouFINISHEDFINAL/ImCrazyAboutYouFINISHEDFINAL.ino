@@ -69,7 +69,7 @@ void loop(){
  ///////////////////////////////////HEAD SPINNING
 
 
-       if (sensorValue > 500){   
+       if (sensorValue > 450){   
   for (i = 0; i<10000; i++){
   // Iterate for 4000 microsteps. 
     digitalWrite(steppin, LOW);  // This LOW to HIGH change is what creates the
@@ -87,7 +87,7 @@ if (musicPlayer.stopped()) {
 Serial.println("music stopped");
 
 //////////////////////////////////SECOND STEP
- if (sensorValue > 350 && sensorValue < 499){   
+ if (sensorValue > 200 && sensorValue < 399){   
   StepTwo = int(random(5,7));
 
 if (StepTwo == 5){
@@ -106,7 +106,7 @@ if (StepTwo == 6){
 
 /////////////////////////////////////////////////////FIRST STEP
 
- if (sensorValue > 250 && sensorValue < 349){   
+ if (sensorValue > 95 && sensorValue < 149){   
   StepOne = int(random(2,4));
 
 if (StepOne == 2){
