@@ -88,7 +88,7 @@ Serial.println("music stopped");
 
 //////////////////////////////////SECOND STEP
  if (sensorValue > 350 && sensorValue < 499){   
-  StepTwo = int(random(5,8));
+  StepTwo = int(random(5,7));
 
 if (StepTwo == 5){
    Serial.println(F("Playing track 005"));
@@ -102,17 +102,12 @@ if (StepTwo == 6){
   Serial.write(StepTwo);
 }
 
-if (StepTwo == 7){
-   Serial.println(F("Playing track 007"));
-   musicPlayer.playFullFile("track007.mp3");
-   Serial.write(StepTwo);
-        }
  }
 
 /////////////////////////////////////////////////////FIRST STEP
 
  if (sensorValue > 250 && sensorValue < 349){   
-  StepOne = int(random(2,5));
+  StepOne = int(random(2,4));
 
 if (StepOne == 2){
    Serial.println(F("Playing track 002"));
@@ -125,13 +120,7 @@ if (StepOne == 3){
   musicPlayer.playFullFile("track003.mp3");
   Serial.write(StepOne);
 }
-
-if (StepOne == 4){
-   Serial.println(F("Playing track 004"));
-   musicPlayer.playFullFile("track004.mp3");
-   Serial.write(StepOne);
-        }
-        }
+ }
 
 /////////////////////////////////////////////////////GETTING YOUR ATTENTION
 
